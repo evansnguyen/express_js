@@ -1,0 +1,19 @@
+{
+  "name": "client-server",
+  "version": "1.0.0",
+  "description": "playing around with expressjs",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "author": "phi long nguyen",
+  "license": "ISC"
+}
