@@ -1,4 +1,4 @@
-const uuidv4 = require('uuid');
+const uuid = require('uuid');
 const express = require('express');
  
 
@@ -72,14 +72,15 @@ app.get('/mess/:messid', (req, res) => {
 });
 
 app.post('/mess',(req,res) =>{
-  const id = uuidv4();
+  const id = uuid.v4();
+  console.log(req + "< this is req \n" + res + "< this is res \n" + id + "< this is id = uuidv4()");
   const message = {
     id,
     text: req.body.text,
-    id,
   };
 
   messages[id] = message;
+  console.log(message);
   return res.send(message);
 });
 
